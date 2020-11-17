@@ -1,0 +1,12 @@
+# Backup Files #
+###################
+*.~*
+
+# Windows/OS Generated Files #
+##############################
+Thumbs.db
+
+# DDL Export Build All #
+##############################
+*_Build_All.sql
+.vscode/settings.json
