@@ -1,0 +1,2 @@
+CREATE OR REPLACE TYPE STRING_TAB as table of varchar2(4000)
+/

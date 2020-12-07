@@ -4,7 +4,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_util IS
 
   FUNCTION get_all_columns_aat(p_owner IN dba_tab_cols.owner%TYPE,
                                p_table IN dba_tab_cols.table_name%TYPE)
-    RETURN pkg_util.dba_tab_cols_aat
+    RETURN pkg_rules.dba_tab_cols_aat
   IS
   /********************************************************************************************************
   *   PURPOSE: Returns a collection of rowtypes of the columns that are on a table
@@ -14,7 +14,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_util IS
   *   ----------  ----------  -----------------------------------------------------------------------------
   *   99/99/9999  NICKP       Created.
   *********************************************************************************************************/
-    l_return pkg_util.dba_tab_cols_aat;
+    l_return pkg_rules.dba_tab_cols_aat;
   BEGIN
     FOR i IN
       (SELECT *
